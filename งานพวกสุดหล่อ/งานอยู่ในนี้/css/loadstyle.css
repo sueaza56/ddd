@@ -1,0 +1,163 @@
+/* body */
+html{
+    scroll-behavior: smooth;
+    cursor: url(../img/mouse1.png),default;
+
+}
+
+a, button, input[type="button"]{
+    cursor: url(../img/mosue2.png), pointer ;
+}
+input[type="search"]{
+    cursor: url(../img/seachmouse.png),default;
+}
+html::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+body{
+    /* animation: seergbdiwa 10s infinite  ease; */
+    /* background: linear-gradient(180deg ,pink ,purple 40%,black 90% ); */
+    background: url(../img/myg.JPEG) center, no-repeat;
+    color: white;
+    font-family:'itim';
+    margin: 0px;
+    padding: 0px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+@font-face {
+    font-family: itim;
+    src: url(../font/itim.ttf);
+}
+/* endbody */
+#loader {
+    position: fixed;
+    inset: 0;
+    background:url("../img/gptblack.png")center / cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0px;
+    z-index: 1;
+}
+
+.moodeng {
+    width: 70px;
+    height: 70px;
+    border: 7px solid #333;
+    /* border-top-color: red; */
+    border-radius: 50%;
+    animation: dee 0.75s linear infinite;
+}
+.moodeng img{
+    width: 100%;
+    height: 100%;
+}
+  
+#loader p {
+    animation: rgb 2s linear infinite;
+    /* -webkit-text-stroke: 0.3px white; */
+    font-size: 20px;
+}
+
+.bar-hide {
+    position: fixed;
+    margin-top:5px;
+    bottom: 175px;
+    left: 10%;
+    width: 80%;
+    height: 5px;
+    background: #222;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+.bar-show {
+    width: 0%;
+    height: 100%;
+    background: red;
+    animation: bar 1.5s ease forwards;
+}
+
+@keyframes bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+  }
+}
+
+@keyframes dee {
+    to {
+        transform: rotate(360deg);
+    }
+    0%{
+        border-top-color: Red;
+    }
+    14%{
+        border-top-color: Orange
+    }
+    28%{
+        border-top-color: Yellow;
+    }
+    42%{
+        border-top-color: Lime;
+    }
+    66%{
+        border-top-color: Blue;
+    }
+    76%{
+        border-top-color: Magenta;
+    }
+    88%{
+        border-top-color: Purple;
+    }
+    92%{
+        border-top-color: Indigo;
+    }
+    96%{
+        border-top-color: brown;
+    }
+    100%{
+        border-top-color: crimson
+    }
+}
+@keyframes rgb {
+    
+
+    0%{
+        color: Red;
+    }
+    14%{
+        color: Orange
+    }
+    28%{
+        color: Yellow;
+    }
+    42%{
+        color: Lime;
+    }
+    66%{
+        color: Blue;
+    }
+    76%{
+        color: Magenta;
+    }
+    88%{
+        color: Purple;
+    }
+    92%{
+        color: Indigo;
+    }
+    96%{
+        color: brown;
+    }
+    100%{
+        color: crimson
+    }
+}
